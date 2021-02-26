@@ -1,19 +1,18 @@
-const Home = () => {
-  
-  // 
-  const handleClick = () => {
-    console.log('teset');
-  };
+import { useState } from 'react';
 
-  const handleClickParameter = (param) =>{
-    console.log(`Hello ${param}`)
-  }
+const Home = () => {
+    const [name, setName] = useState('Mario');
+
+  
+  const handleClick = () => {
+    setName('Luigi')
+  };
 
   return (
     <div className='home'>
       <h2>HomePage</h2>
       <button onClick={handleClick}>Clicke me</button>
-      <button onClick={()=>{handleClickParameter('teste!')}}>button 2</button>
+      <p>{name}</p>
     </div>
   );
 };
