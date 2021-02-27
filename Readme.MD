@@ -5,9 +5,9 @@
 Simple React Snippets
 npx create-react-app
 ```
-## Packages
+## snippet:
 ```
-
+sfc + Tab -> Stateless Function Component
 ```
 
 # Getting Started with Create React App
