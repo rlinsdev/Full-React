@@ -1,18 +1,17 @@
 # Net Ninja - Full React
 
-## Vs Extension:
+## Vs packages:
 ```
 Simple React Snippets
 npx create-react-app
+npx json-server --watch data/db.json --port 8000
+npm i react-router-dom@5
 ```
 ## snippet:
 ```
 sfc + Tab -> Stateless Function Component
 ```
-## Packages:
-```
-npx json-server --watch data/db.json --port 8000
-```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
