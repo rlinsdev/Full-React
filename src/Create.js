@@ -1,13 +1,19 @@
 import { useState } from "react";
 
 const Create = () => {
-  const [title, setTitle] = useState();
+  const [title, setTitle] = useState('');
   const [body, setBody] = useState();
   const [author, setAuthor] = useState('Mario');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const blog = { title, body, author };
+  }
+
   return ( 
     <div className="create">
       <h2>Add a new Blog</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <label>Blog Title:</label>
         <input type="text" require='true' value={ title } onChange={ (e) => setTitle(e.target.value) }></input>
         <label>Blog Body:</label>
@@ -18,7 +24,6 @@ const Create = () => {
           <option value='Yoshy'>Yoshy</option>
         </select>
         <button>Add Blog</button>
-        {title} {body} {author}
       </form>
     </div>
    );
