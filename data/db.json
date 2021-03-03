@@ -44,6 +44,12 @@
       "body": "body log blogy body log blogy body log blogy body log blogy body log blogy body log blogy body log blogy body log blogy body log blogy body log blogy ",
       "author": "Mario",
       "id": 8
+    },
+    {
+      "title": "Teste return",
+      "body": "Body return",
+      "author": "Mario",
+      "id": 9
     }
   ]
 }
